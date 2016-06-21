@@ -286,7 +286,8 @@ span.redTxt {color:#d9534f;}
 }
 /*----------------------------------------------------------------*/
 
-
+.mobdp {background:none; height: 38px; border:0 !important; outline:none;
+    line-height: 38px; border-bottom:1px solid #c6c6c6 !important;}
 
 /*-----------------------------------------*/
 .dropdwn {width:100%;}
