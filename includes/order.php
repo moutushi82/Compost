@@ -119,7 +119,7 @@
 			<div class="frmRw">
 			    <div class="frmClmA">
 				    <div class="inGroup">      
-						<select id="selTown" name="selTown" data-placeholder="Pick Name" class="dropdwn" tabindex="9">
+						<select id="selTown" name="selTown" data-placeholder="Pick Name" class="dropdwn mobdp" tabindex="9">
 							<option value="">Pick Name</option>
 							<?php
 							if($townResult){
@@ -142,7 +142,7 @@
 			<div class="frmRw">
 			    <div class="frmClmA">
 			    <div class="inGroup">      
-					<select id="selWasteIn" name="selWasteIn" data-placeholder="Pick Amount" class="dropdwn" tabindex="9">
+					<select id="selWasteIn" name="selWasteIn" data-placeholder="Pick Amount" class="dropdwn mobdp" tabindex="9">
 			    		<option value="" selected="selected">PICK AMOUNT</option>
 			    		<?php
 							$yardWasteValue = 0.00;
@@ -170,7 +170,7 @@
 			<div class="frmRw">
 			    <div class="frmClmA">
 			    <div class="inGroup">      
-					<select id="selCompostOut" name="selCompostOut" data-placeholder="Pick Amount" class="dropdwn" tabindex="9">
+					<select id="selCompostOut" name="selCompostOut" data-placeholder="Pick Amount" class="dropdwn mobdp" tabindex="9">
 					    <option value="" selected="selected">PICK AMOUNT</option>
 					    <?php
 							$yardWasteValue = 0.00;
