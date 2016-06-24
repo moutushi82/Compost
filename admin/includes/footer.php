@@ -38,16 +38,32 @@
 <script src="css/assets/_demo/dashboard-charts.js" type="text/javascript"></script>
 <script src="css/assets/_demo/custom-google-maps.js" type="text/javascript"></script>
 
-<div style="clear:both; padding:0px; margin:0px;  height:0px; width:0px;"></div>
+<div style="clear:both; padding:0px; margin:0px;  height:1px; width:100%;"></div>
 <div class="loginfooterouter">
 	<footer>
-		<p>© 2015 - POPUPFX ! ALL RIGHT RESARVED
-			<a target="_blank" href="http://www.thethinkerz.com">Powerd by</a>
-
+		<p> © 2016 - UPT Compost | ALL RIGHT RESARVED &nbsp;&nbsp;&nbsp;&nbsp;
+			Powerd by <a href="http://www.thethinkerz.com/" target="_blank"><img     width="112" src="images/footerlogo2.png"></a>
 		</p>
 	</footer>
 </div>
 
+<script>
+function screensize() {
+    
+var wndow_ht = $( window ).height();
+var wndow_use = wndow_ht - 30;
+$('.lgInPg').css("min-height",wndow_use);
+
+};
+
+$( window ).resize(function() {
+  screensize();
+});
+$( document ).ready(function() {
+  screensize();	
+});
+
+</script>
 
 </body>
 

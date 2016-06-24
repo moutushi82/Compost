@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Form</title>
+		<title>UPT COMPOST</title>
 
 		<meta name="HandheldFriendly" content="true">
 		<meta name="viewport" content="width=device-width, initial-scale=0.666667, maximum-scale=0.666667, user-scalable=0">
@@ -15,17 +15,22 @@
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script>
 			$(function() {
-				$("#datepicker").datepicker({ dateFormat: 'yy-mm-dd' });
+				 var currentDate = new Date();
+				$("#datepicker").datepicker({ 
+					dateFormat: 'dd-mm-yy', 
+					defaultDate: new Date()
+				});
+				$("#datepicker").datepicker("setDate", currentDate);
+				//$("#datepicker").datepicker('setDate', new Date());
 			});
 		</script>
 		<script src="js/custom.js"></script>
 		<!-- Font-Awesome Icon -->
 		<link href="font/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/png">
 		<!--title icon-->
 
 		<link rel="stylesheet" href="css/chosen.css">
-
 		<!--Form Style sheet-->
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 

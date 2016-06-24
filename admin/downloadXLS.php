@@ -75,11 +75,26 @@ $objPHPExcel->getDefaultStyle()->applyFromArray($style);
 
 $orderData = array();
 for($i=1; $i<=12; $i++){
-	$orderSql = "SELECT month, SUM(yardwastein) as YARDSIN, SUM(compostout) as YARDSOUT, COUNT(`id`) as COMPOSTOFF, COUNT(yardwastein) as DOWASTEIN, COUNT(compostout) as DOWASTEOUT FROM order_details WHERE month = '".$i."' AND year = '".$year."'";
+	$tempArr[] = array();
+	$orderSql = "SELECT month, SUM(yardwastein) as YARDSIN, SUM(compostout) as YARDSOUT FROM order_details WHERE month = '".$i."' AND year = '".$year."'";
 	$objDB->setQuery($orderSql);
 	$result = $objDB->select();
 	
-	$orderData[] = $result[0];
+	$tempArr['month'] = $result[0]['month'];
+	$tempArr['YARDSIN'] = $result[0]['YARDSIN'];
+	$tempArr['YARDSOUT'] = $result[0]['YARDSOUT'];
+	
+	$orderSql1 = "SELECT COUNT(yardwastein) as DOWASTEIN FROM order_details WHERE month = '".$i."' AND year = '".$year."' AND yardwastein != 0.00";
+	$objDB->setQuery($orderSql1);
+	$result1 = $objDB->select();
+	$tempArr['DOWASTEIN'] = $result1[0]['DOWASTEIN'];
+	
+	$orderSql2 = "SELECT COUNT(compostout) as DOWASTEOUT FROM order_details WHERE month = '".$i."' AND year = '".$year."' AND compostout != 0.00";
+	$objDB->setQuery($orderSql2);
+	$result2 = $objDB->select();
+	$tempArr['DOWASTEOUT'] = $result2[0]['DOWASTEOUT'];
+	
+	$orderData[] = $tempArr;
 }
 
 //HEADER ROW

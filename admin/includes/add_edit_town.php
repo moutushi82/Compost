@@ -22,7 +22,7 @@ $objDB = new DB();
 
 						<!-- Title Bar Start -->
 
-						<div class="box-title green">
+						<div class="box-title">
 
 							<span>Add Town</span>
 

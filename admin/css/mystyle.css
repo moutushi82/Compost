@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {width:100%; height:auto; margin:0 auto; padding:0; font-family: 'Open Sans', sans-serif;}
+
+img {border:thin none #0066FF;}
+
+p, h1, h2, h3, h4, h5, h6, ul, li {
+margin:0px;
+padding:0px;
+list-style-type:none;
+ }
+
+a {text-decoration:none}
+
+.magic {clear:both; padding:0px; margin:0px;  height:0px; width:0px;}
+.page {width:1170px; height:auto; margin:0 auto;  }
+
+
+.top-bar {
+    background-color: #252b33;
+}
+.lgInPg {background: url(../images/bg.jpg) no-repeat center center rgba(0, 0, 0, 0);
+    background-size: cover;}
+.lgInPgin {padding:100px 0;}
+.lgInPgin .login-box {background:none;}
+.lgInPgin .login-box-title.red {    background-color: rgba(0, 0, 0, 0.74);    
+	padding-bottom: 13px;    color: #62b925;}
+.lgInPgin .login-box-content {    background-color: rgba(28, 28, 28, 0.79);}	
+
+.lgInPgin .login-box-content input	 {
+    color: #fff;
+height: 34px;
+    line-height: 34px;
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid #999;
+    border-radius: 0;
+}
+footer a {    background:none;}
+
+.box-title {    background-color: #1c1c1c ;    padding-bottom: 13px;}
+.box-title span {    color: #81d61e;}
+.main-menu li.active a, a:hover, .main-menu li.active a:hover, .main-menu li a:hover, .main-menu li ul.submenu li a:hover {
+    color: #64ba19 !important;
+	font-family: 'Open Sans', sans-serif;
+}
+.main-menu li.active {
+    border-left: 2px solid #81d61e;
+}
+.sidebar-user-profile .ul-icons .icon-list li a:hover {
+  border-color: #81d61e;
+}
+.regular-table th {    color: #000000;    background: #d3e8c1;}
+.loginfooterouter {    position: absolute;}
+.admLgo {text-align: right;}
+.logo-container {background:none;}
+
+.basic-form input, .basic-form select, .basic-form textarea {
+    border: 1px solid #bcc2c4;
+}
+
+.lgoutt {    
+	padding: 27px 25px;
+    text-align: left;
+    color: #78838c;
+	}
+
+.lgoutt a {
+    border-radius: 50%;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #8e9aa4;
+    text-align: center;
+    line-height: 22px;
+	}
+.lgoutt a:hover {
+  border-color: #81d61e;
+}
+.sidebar-user-profile {padding:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -28,8 +28,15 @@
   <div class="sidebar sidebar-left">
 
     <!-- Logo Start -->
-    <div class="logo-container" style="background:#fff;">
-      <a href="Home"><img src="images/compostLOGOsm.png" alt="logo" style="margin-top:9px;max-width:100%" /></a>
+    <div class="logo-container">
+      
+          <div class="lgoutt" >
+			
+			<a href="index.php?a=logout" title="Logout"><i class="fa fa-power-off"></i></a>
+			<span class=""><?php echo "ADMIN"; ?></span>
+			
+		  </div>
+        
     </div>
     <!-- Logo End -->
     
@@ -38,16 +45,13 @@
       
       <!--<div class="avatar">
         <img src="<?php echo 'images/logo.png' ?>" alt="Jane Doe" style="max-width:100%;"/>
-      </div>-->
+      </div>
       
       <div class="ul-icons">
-        <span class="user-info"><?php echo "ADMIN"; ?></span>
-        <ul class="icon-list">
-          <li title="Logout"><a href="index.php?a=logout"><i class="fa fa-power-off"></i></a></li>
-         <!-- <li><a href="profile.html"><i class="fa fa-cog"></i></a></li>
-          <li><a href="#"><i class="fa fa-comments"></i></a></li>-->
-        </ul>
+        
+        
       </div>
+	  -->
       
     </div>
     <!-- User Profile End -->

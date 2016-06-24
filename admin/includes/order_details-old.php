@@ -178,7 +178,6 @@ $rs = $objDB->select();
 			 <?php } ?>
                   </tbody>
                 </table>
-				<br><br>
               </div>
               <!-- Content End -->
 

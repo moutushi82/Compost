@@ -18,6 +18,7 @@ if(count($rs) == 1 )
 
 	$objDB->close();
 	$_SESSION[ADMIN_SESSION_VAR] = $rs[0]['id'];
+	$_SESSION[SUCCESS_MSG] = "Welcome ADMIN";
 	//$_SESSION[ADMIN_TYPE] = 1;
 	header("location: index.php?p=order_details");
 	exit();

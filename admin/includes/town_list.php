@@ -40,15 +40,17 @@ $rs = $objDB->select();
             <div class="box">
 				<div class="green">
 				<?php 
-					if(isset($_SESSION[SUCCESS_MSG]) && $_SESSION[SUCCESS_MSG] != ""){
-						echo $_SESSION[SUCCESS_MSG]; 
-						unset($_SESSION[SUCCESS_MSG]);
+					if(isset($_SESSION[SUCCESS_MSG]) && $_SESSION[SUCCESS_MSG] != ""){ ?>
+						<div class="alartShowBx grnAlrt">
+				        	<i class="fa fa-exclamation-triangle"></i><?php echo $_SESSION[SUCCESS_MSG]; ?> 
+				    	</div>
+					<?php	unset($_SESSION[SUCCESS_MSG]);
 						$_SESSION[SUCCESS_MSG] = "";
 					}
 				?>
 				</div>
               <!-- Title Bar Start -->
-              <div class="box-title green">
+              <div class="box-title">
                 <span>Towns</span>
               </div>
               <!-- Title Bar End -->

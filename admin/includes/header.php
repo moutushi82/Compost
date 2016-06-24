@@ -54,6 +54,8 @@
   <link rel="stylesheet" type="text/css" href="css/assets/css/tables.css">
   <link rel="stylesheet" type="text/css" href="css/assets/assets/icheck/flat/_all.css">
 
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  
   <!-- Google Maps -->
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
   
@@ -107,8 +109,9 @@
         </div>
 
         <div class="col-lg-6 col-sm-6">
-          <ul class="right-icons icon-list">
-          </ul>
+          <div class="admLgo">
+<a href="Home"><img src="images/compostLOGOsm.png" alt="logo" style="margin-top:4px;max-width:100%" /></a>
+		  </div>
         </div>
 
       </div>

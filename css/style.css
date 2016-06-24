@@ -289,6 +289,9 @@ span.redTxt {color:#d9534f;}
 .mobdp {background:none; height: 38px; border:0 !important; outline:none;
     line-height: 38px; border-bottom:1px solid #c6c6c6 !important;}
 
+.rqrIn .chosen-container a, .reqr {box-shadow:0px -4px 1px -2px rgb(255, 12, 12) inset;}
+/* 0px -3px 2px -2px rgb(255, 0, 0) inset; */
+
 /*-----------------------------------------*/
 .dropdwn {width:100%;}
 .chosen-container-single .chosen-single span { color: #737272; font-size: 14px;    padding: 0 5px;}

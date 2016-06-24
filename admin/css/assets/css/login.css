@@ -11,8 +11,8 @@
   border-radius: 3px;
   background-color: #fff;
   margin: 0 auto;
-  width: 320px;
-  margin-top: 100px;
+  width: 340px;
+ 
   overflow: hidden;
 }
 .login-box-title {
@@ -83,3 +83,25 @@
 .login-box-content .half.last {
   text-align: right;
 }
+/*-------------------------------------*/
+.hidden-xs {display:none;}
+.login-box-content input[type="submit"].inSumt22 {
+    width: 190px;
+    height: 50px;
+    color: #fff;
+    background: #378111;
+    font-size: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    line-height: 40px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    font-weight: 500;
+	padding: 0;
+}	
+.login-box-content input[type="submit"].inSumt22:hover {    background: #81d61e;}
+.top-bar {display:none;}	
+header {text-align:center; padding:13px 0; background:rgba(0, 0, 0, 0.6);}
