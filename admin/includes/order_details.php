@@ -58,7 +58,7 @@ $rs = $objDB->select();
 			  
 			  <style>
 				@media (max-width: 360px) {
-					.box > .scrBx {overflow: auto;}
+					.box > .scrBx {overflow-x: scroll;}
 				}
 				.scrBx {}
 			  </style>
